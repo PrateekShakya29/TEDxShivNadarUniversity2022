@@ -1,5 +1,5 @@
 $('.countdown-timer').countdown({
-    date: "November 14, 2022 10:00:00",
+    date: "November 20, 2022 10:00:00",
 
     render: function (data) {
         $(".days .value").html(this.leadingZeros(data.days, 2));
