@@ -60,6 +60,8 @@
 
 #home {
   background: url("../images/bg-home-1.png");
+  /* background-size: 100vw; */
+  /* width: 100vw; */
 }
 
 
@@ -189,12 +191,31 @@
   Section - Team
   --------------
 */
-
+.all-members {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.member-card {
+  width: 310px;
+}
+.member-image > img {
+  height: 300px;
+  width: 310px;
+}
+.member-desc {
+  background-color: #DFDFDF;
+  text-align: center;
+}
 .member-box {
   margin-bottom: 24px;
 }
 
-
+.members {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*
   Section - Speakers
@@ -213,7 +234,7 @@
 */
 
 #venue {
-  background-image: url("../images/bg-venue.jpg");
+  background-image: url("../images/g_block.jpg");
   background-position: center bottom !important;
 }
 
@@ -532,6 +553,7 @@
   #form-contact button {
     margin-top: 20px;
   }
+  
 }
 
 
@@ -541,6 +563,7 @@
     padding-top: 32px;
     border-top: 1px solid #dfdfdf;
   }
+  
 }
 
 
@@ -764,20 +787,22 @@
   Responsive images
   -----------------
 */
-
+.desc {
+  width: 20vw;
+}
 .img-wrapper {
-  position: relative;
-  padding-bottom: 133.33%;
+  /* position: relative; */
+  padding-bottom: 103.33%;
   /* 4:3 aspect ratio */
   overflow: hidden;
-  width: 100%;
+  width: 10vw;
 }
 
 .img-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  height: 20vw;
   margin: auto;
 }
 

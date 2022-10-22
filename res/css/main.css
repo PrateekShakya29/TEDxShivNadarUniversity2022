@@ -5139,6 +5139,10 @@ section.pull-up {
   .gallery-grid.grid-col-4.gutter-medium .item {
     padding: 0 0 11px 11px
   }
+  .navbar .navbar-brand img {
+    width: 200px;
+    top: 28px;
+  }
 }
 
 @media (max-width:543px) {
