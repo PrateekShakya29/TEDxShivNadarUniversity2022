@@ -136,9 +136,9 @@
           <br>
           <form name="contact" action="thank-you" method="post" id="form-contact" netlify>
             <div class="row margin-4 no-margin-rl">
-              <input type="text" placeholder="Your Name" name="name" class="required" required>
+              <input type="text" id="name" placeholder="Your Name" name="name" class="required" required>
               <input type="email" placeholder="Your Email" name="email" class="required email" required>
-              <textarea placeholder="Your Message" name="message" class="required" required></textarea>
+              <textarea id="message" placeholder="Your Message" name="message" class="required" required></textarea>
             </div>
             <!-- //.row -->
 
@@ -150,7 +150,7 @@
             <!-- //.row -->
 
             <div class="row margin-4 no-margin-rl">
-              <button id="btn-form-contact" type="submit" class="btn btn-base-color btn-medium">
+              <button id="btn-form-contact" type="submit" class="btn btn-base-color btn-medium" disabled>
                 Send Message
               </button>
             </div>

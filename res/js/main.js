@@ -292,3 +292,14 @@
     });
   });
 })(jQuery);
+
+// $(document).ready(function() {
+//   $('#btn-form-contact').click(function() {
+//       $('#fr1').attr('/contact/thank-you',
+//                      'mailto:pj579@snu.edu.in?subject=' +
+//                      $('#name').val() + "'s query" + '&body=' + $('#message').val());
+//       $('#fr1').submit();
+//   });
+// });
+
+
