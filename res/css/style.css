@@ -216,7 +216,47 @@
   display: flex;
   flex-wrap: wrap;
 }
-
+/*
+  Section - Qissa Speakers
+  --------------
+*/
+.speaker-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+.speaker-image > img {
+  height: 300px;
+  width: 310px;
+}
+.speaker-desc {
+  margin-bottom: 10px;
+}
+.speaker-desc > .heading {
+  margin-bottom: 10px;
+}
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slots {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (min-width: 200px) and (max-width: 800px) {
+  .speaker-image {
+    margin-bottom: 10px;
+  }
+  .speaker-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    width: 90%;
+  }
+}
 /*
   Section - Speakers
   ------------------
