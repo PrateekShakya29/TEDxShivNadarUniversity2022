@@ -243,10 +243,6 @@
   flex-direction: column;
   justify-content: space-around;
 }
-.slots {
-  display: flex;
-  justify-content: space-evenly;
-}
 @media (min-width: 200px) and (max-width: 800px) {
   .speaker-image {
     margin-bottom: 10px;
