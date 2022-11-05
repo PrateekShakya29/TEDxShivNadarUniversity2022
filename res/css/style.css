@@ -277,9 +277,31 @@
   Section - Speakers
   ------------------
 */
-
+.speaker-container {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0 80px;
+}
+.speaker-section {
+  width: 300px;
+	margin: 10px;
+	background-color: white;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.speaker-section :hover {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.speaker-image :hover {
+  transform: translateY(-10px);
+}
+.speaker-thumb :hover::after{
+  top: 0;
+}
 .speaker-box {
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 
