@@ -86,6 +86,7 @@
   /* background-size: ; */
   /* background-size: 20px; */
 }
+
 @media (min-width: 200px) and (max-width: 800px) {
   #home-bg-slideshow .bg-slideshow-wrapper .slides>.bg-cover:nth-child(1) {
     background: url("../images/mis_phone.png");
@@ -214,17 +215,21 @@
   align-items: center;
   justify-content: center;
 }
+
 .member-card {
   width: 310px;
 }
-.member-image > img {
+
+.member-image>img {
   height: 300px;
   width: 310px;
 }
+
 .member-desc {
   background-color: #DFDFDF;
   text-align: center;
 }
+
 .member-box {
   margin-bottom: 24px;
 }
@@ -233,6 +238,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 /*
   Section - Qissa Speakers
   --------------
@@ -241,64 +247,125 @@
   display: flex;
   justify-content: space-evenly;
 }
-.speaker-image > img {
+
+.speaker-image>img {
   object-fit: contain;
   height: 300px;
   width: 310px;
   /* width: 100%; */
   /* height: 100%; */
 }
+
 .speaker-desc {
   margin-bottom: 10px;
 }
-.speaker-desc > .heading {
+
+.speaker-desc>.heading {
   margin-bottom: 10px;
 }
+
 .content {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 @media (min-width: 200px) and (max-width: 800px) {
   .speaker-image {
     margin-bottom: 10px;
   }
+
   .speaker-card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .content {
     width: 90%;
   }
 }
+
 /*
   Section - Speakers
   ------------------
 */
-.speaker-container {
-  display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
-	margin: 20px 0 80px;
-}
+
 .speaker-section {
-  width: 300px;
-	margin: 10px;
-	background-color: white;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.speaker-section :hover {
-  top: 50%;
-  transform: translateY(-50%);
+.speaker-description {
+  padding: 30px;
 }
-.speaker-image :hover {
-  transform: translateY(-10px);
+
+.speaker-set {
+  width: 340px;
+  position: relative;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  cursor: pointer;
 }
-.speaker-thumb :hover::after{
+.speaker > img {
+  width: 340px;
+  height: 340px;
+}
+.speaker-back {
+  position: absolute;
+  left: 0;
   top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+  transform: perspective(500px) rotateY(180deg);
+  border-radius: 5px;
+  box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.2);
+}
+.speaker-back>.speaker-description {
+  font-size: 1rem;
+}
+.speaker-set:hover .speaker{
+  transform: perspective(500px) rotateY(-180deg);
+}
+.speaker-set:hover .speaker-back{
+  transform: perspective(500px) rotateY(0deg);
+}
+.speaker {
+  background-color: white;
+  position: relative;
+  width: 340px;
+  box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+  transform: perspective(500px) rotateY(0deg);
+}
+.speaker-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 5px;
+  text-align: center;
+  color: #000000;
+  padding: 10px 0px;
+  text-align: center;
+}
+.speaker-position {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 160%;
+  text-align: center;
+  color: #711A17;
+  padding-bottom: 10px;
 }
 .speaker-box {
   /* margin-bottom: 24px; */
@@ -631,7 +698,7 @@
   #form-contact button {
     margin-top: 20px;
   }
-  
+
 }
 
 
@@ -641,7 +708,7 @@
     padding-top: 32px;
     border-top: 1px solid #dfdfdf;
   }
-  
+
 }
 
 
@@ -868,6 +935,7 @@
 .desc {
   width: 20vw;
 }
+
 .img-wrapper {
   /* position: relative; */
   padding-bottom: 103.33%;
